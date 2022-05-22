@@ -1,5 +1,6 @@
 # 
 # Youtube Megami Player
+![megami logo](https://megamiclub.bg/plovdiv/wp-content/themes/megami-plovdiv/images/logo.png)
 ## Video Demo:  <URL HERE>
 ## Description:
   This is my final project for CS50. It's a dj mixer. It uses youtube's iframe api to play songs.
