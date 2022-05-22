@@ -56,3 +56,5 @@
     - Tailwind CSS
     - Python/FLask
     - SQLite
+  
+  ![my discord: DimchoMorkova#3704](https://i.imgur.com/vTPP3Z2.png)
