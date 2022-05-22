@@ -1,6 +1,11 @@
 # 
 # Youtube Megami Player
 ![megami logo](https://megamiclub.bg/plovdiv/wp-content/themes/megami-plovdiv/images/logo.png)
+
+  
+## Made by:
+![dimaka industries logo](https://i.imgur.com/2oHgAxZ.png)  
+
 ## Demo:  <URL HERE>
   
 ![website screenshot overview](https://i.imgur.com/nIh5u4D.jpg)
