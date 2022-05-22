@@ -3,7 +3,7 @@
 ![megami logo](https://megamiclub.bg/plovdiv/wp-content/themes/megami-plovdiv/images/logo.png)
 ## Demo:  <URL HERE>
   
-![website screenshot overview](https://i.imgur.com/x2HDk9U.jpg)
+![website screenshot overview](https://i.imgur.com/nIh5u4D.jpg)
 ## Description 📜
   This is my final project for CS50. It's a dj mixer which uses youtube's iframe api to play songs.
   
