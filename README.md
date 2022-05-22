@@ -52,6 +52,7 @@
   
   
  ### Technologies used 📟
-    - HTML/CSS/JavaScript
+    - HTML/JavaScript
+    - Tailwind CSS
     - Python/FLask
     - SQLite
