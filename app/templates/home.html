@@ -1,0 +1,257 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div class="flex justify-center m-2">
+    <img  src ="static/css/megami.png" style="pointer-events: none; width: 410px; height:115px;">
+</div>
+
+
+
+
+
+
+<div class="z-[5] bg-gradient-to-l from-slate-900 via-slate-700 to-slate-900 bg-opacity-90" style=" padding-top: 5px; padding-bottom: 5px;" >
+    <div class="flex  space-x-[2.1rem]" >
+
+        <div class="flex justify-center space-x-1 pl-[6.7rem] ">
+
+            <div class="text-sm text-[#fdc252] font-bold text-center overflow-hidden w-[320px] whitespace-nowrap m-auto" id="titleLeft">
+            </div>
+        
+            
+            <div class="flex justify-between max-w-xs space-x-4">
+                
+
+                <div class="flex  max-w-xs space-x-5 bg-black rounded bg-opacity-0 hover:bg-opacity-40" data-tooltip-target="tooltip-default"  data-tooltip-style="dark" data-tooltip-placement="top">
+                    <button  class="ml-2 flex justify-center items-center bg-gray-300 hover:bg-gray-400 text-gray-800 h-10 w-10 font-bold  text-3xl mt-[11px] rounded-xl hover:rounded-lg transition-all text-center " id="pb1plus" >
+                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828921.png" class="h-[70%] w-[70%] ">
+                    </button>
+        
+                    <h2 class=" font-bold text-xl text-[#fdc252] mt-3" id="pb1text">
+                        1.00
+                    </h2>
+                            
+                    <button class="mr-2 flex justify-center items-center bg-gray-300 hover:bg-gray-400 text-gray-800 h-10 w-10 font-bold  text-3xl mt-[11px] rounded-xl hover:rounded-lg transition-all text-center " id="pb1minus" >
+                        <img src="https://cdn-icons-png.flaticon.com/512/43/43625.png" class="h-[70%] w-[70%] ">
+                    </button>
+                </div>
+
+                    <button class=" bg-gray-300 hover:bg-gray-400 text-gray-800 my-2 mx-[0,125rem]  font-bold py-2 px-2 rounded-2xl hover:rounded-lg transition-all items-center" id="mute1" >
+                        <img src="https://cdn-icons-png.flaticon.com/512/483/483031.png"  class=" w-8 h-8 " id="show1"></img> 
+                        <img src="https://cdn-icons-png.flaticon.com/512/483/483049.png"  class=" w-8 h-8 hidden" id="hide1"></img> 
+                            
+                    </button>  
+                
+            </div>
+        
+            <div class="flex justify-between max-w-xs space-x-4">
+                <button class="  bg-gray-300 hover:bg-gray-400 text-gray-800 my-2 mx-[0,125rem]  font-bold py-2 px-2 rounded-2xl hover:rounded-lg transition-all  " id="mute2" >
+                    <img src="https://cdn-icons-png.flaticon.com/512/483/483031.png"  class=" w-8 h-8  " id="show2"></img> 
+                    <img src="https://cdn-icons-png.flaticon.com/512/483/483049.png"  class=" w-8 h-8 hidden" id="hide2"></img> 
+                        
+                </button>
+                <div class="flex  max-w-xs space-x-5 bg-black rounded bg-opacity-0 hover:bg-opacity-40" data-tooltip-target="tooltip-default"  data-tooltip-style="dark" data-tooltip-placement="top">
+                    <button  class="ml-2 flex justify-center items-center bg-gray-300 hover:bg-gray-400 text-gray-800 h-10 w-10 font-bold  text-3xl mt-[11px] rounded-xl hover:rounded-lg transition-all " id="pb2plus" >
+                        
+                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828921.png" class="h-[70%] w-[70%] ">
+                        
+                    </button>
+        
+                    <h2 class=" font-bold text-xl text-[#fdc252] mt-3" id="pb2text">
+                        1.00
+                    </h2>
+                            
+                    <button class="mr-2 flex justify-center items-center bg-gray-300 hover:bg-gray-400 text-gray-800 h-10 w-10 font-bold  text-3xl mt-[11px] rounded-xl hover:rounded-lg transition-all text-center " id="pb2minus" >
+                    
+                        <img src="https://cdn-icons-png.flaticon.com/512/43/43625.png" class="h-[70%] w-[70%] ">
+                        
+                    </button>
+                </div>
+                    
+                
+                
+
+                    <div id="tooltip-default" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+                        Playback Rate
+                            <div class="tooltip-arrow" data-popper-arrow></div>
+                        </div>
+                
+                       
+                
+            </div>
+
+
+
+            <div class="text-sm text-[#fdc252] font-bold text-center overflow-hidden w-[320px] whitespace-nowrap m-auto " id="titleRight">
+            </div> 
+
+
+        </div>
+      
+      
+
+    </div>  
+    <div class="flex space-x-6 pl-20 z-[8]" >
+        
+        <img src="static/css/grey-goose.png" class="z-[9] left-[0.75rem] top-[9rem]" style="pointer-events: none; height: 300px; width: 165px; transform: rotate(-10deg);  position: absolute; ">
+
+        <div class="flex space-x-2 ">            
+            
+                
+                
+                <div id="playerLeft" class="mt-[0.50rem] shadow-sm z-10 border border-x-2 border-y-8 border-yellow-600 rounded" style="width: 338px; height: 190px;" >
+                
+                </div>
+                       
+
+            <div class="w-40 h-40 mt-[1.7rem]">
+                <img src="static/css/vinyl.png" class="spin" id="vinyl1" style="animation-duration: 5000ms;">
+            </div> 
+
+             
+        </div> 
+
+        <div class="rangeSlider vertical mt-20 z-[9] left-[34.29rem] " style="position: absolute; width: 10% !important;">
+            <div class="circleRange1  "></div>
+
+            <input type="range" class="circleRange" id="sliderLeft" min="0" max="100" value="100" >
+            
+            <div class="circleRange1  " ></div>
+        </div>
+
+
+        
+        <div class="rangeSlider vertical mt-20 z-[9] left-[38.29rem] " style="position: absolute; width: 10% !important;">
+            <div class="circleRange1"></div>
+
+            <input type="range" class="circleRange" id="sliderRight"  min="0" max="100" value="100" >
+            
+            <div class="circleRange1"></div>
+        </div>
+
+        <div class="flex space-x-2 pl-[6.4rem] z[-8]">
+
+            
+
+            <div class="w-40 h-40 mt-[1.7rem]">
+                <img src="static/css/vinyl.png" class="spin " id="vinyl2" style="animation-duration: 5000ms;">
+            </div> 
+
+           <!-- <div class="rangeSlider vertical mt-16" style="width: 30% !important;">
+                <div class="circleRange1"></div>
+
+                <input type="range" class=" circleRange   "  min="0" max="100" value="50" >
+                
+                <div class="circleRange1"></div>
+            </div>
+            -->
+            
+                
+            <div id="playerRight" class="mt-[0.70rem] shadow-sm z-10 border border-x-2 border-y-4 border-yellow-600 rounded" style="width: 338px; height: 190px;" >
+            </div>
+            <img src="static/css/moet.png" class="z-[9] left-[75.25rem] top-[9.5rem]" style="pointer-events: none; height: 300px; width: 107px; transform: rotate(10deg);  position: absolute; ">   
+            
+            
+        </div>
+    </div>
+    
+    <!--
+    <div class="w-1/4  " style="margin-left: 38%; margin-right: 16%;">
+        <label for="range" class="font-bold text-gray-600">Simple range</label>
+        <input type="range" name="range" class="rounded w-full h-3 bg-blue-100 appearance-none slider" id="slider" />
+        
+    </div>
+    -->
+
+    
+
+    <div class="rangeSlider w-56">
+        <div class="circleRange1"></div>
+                    
+        <input type="range" class=" circleRange   " id="slider" min="0" max="99" value="50" >
+                    
+        <div class="circleRange1"></div>
+    </div>
+
+</div>
+
+<div class="h-screen text-center text-white bg-slate-800 mx-24 bg-opacity-90">
+
+    <div class="flex justify-around space-x-80 ">
+
+        <div class="flex  max-w-xs space-x-4 bg-black rounded bg-opacity-0 hover:bg-opacity-40" data-tooltip-target="tooltip-play"  data-tooltip-style="dark" data-tooltip-placement="left">
+
+            <form class="w-full max-w-sm m-2">
+                <div class="flex items-center border-b space-x-2 py-2">
+                    <input class="rounded bg-[#fdc252] bg-opacity-50 border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" autocomplete="off" id="url">
+                    <button class="flex-shrink-0 bg-gray-300 hover:bg-gray-400 border-gray-300 hover:border-gray-400 text-sm border-4 text-black py-1 px-2 rounded-xl hover:rounded-lg transition-all" type="button" id="btnUrl1">
+                        play
+                    </button>
+
+                    <button class="flex-shrink-0 bg-gray-300 hover:bg-gray-400 border-gray-300 hover:border-gray-400 text-sm border-4 text-black py-1 px-2 rounded-xl hover:rounded-lg transition-all" type="button" id="btnUrl2">
+                        play
+                    </button>
+        
+                </div>
+            </form>
+        </div>
+        
+
+        <div id="tooltip-play" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+             song name or URL
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+
+    </div>
+
+
+    <div class="flex space-x-10 justify-center" id="videoListContainer">
+
+    </div> 
+
+    
+
+
+</div>
+
+<footer class="p-4 bg-gray-800 rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+    <div class="flex space-x-5 justify-center ">
+
+    
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com" class="hover:underline">CS50</a> DimchoMorkova
+        </span>
+
+        <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+        </a>
+
+        <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">Home</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">About</a>
+            </li>
+        </ul>
+
+    </div>
+</footer>
+
+
+
+<!--/////////SCRIPT\\\\\\\\\\-->
+
+
+
+
+<script >
+
+
+
+
+</script>
+
+
+
+{% endblock content %}

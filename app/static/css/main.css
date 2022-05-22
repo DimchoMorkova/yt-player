@@ -1,0 +1,150 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h1{
+    text-align: center !important;
+    padding-top: 25px !important;
+}
+
+.wrapper{
+    text-align: center;
+}
+
+button{
+    margin-top: 25px;
+    
+}
+
+p{
+    margin-top: 50px;
+    text-align: center !important;
+}
+
+.slider{
+    pointer-events: auto;
+}
+
+
+.spin {
+
+    animation-name: spin;
+    /*animation-duration: 5000ms; /* ----> 5000/playbackrate  */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    animation-play-state: paused;
+    /* transform: rotate(3deg); */
+     /* transform: rotate(0.3rad);/ */
+     /* transform: rotate(3grad); */ 
+     /* transform: rotate(.03turn);  */
+  }
+  
+  @keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
+  }
+
+/*.puase{
+    animation-play-state: paused !important;
+}  */
+
+body{
+    background-image: url(https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/129325364/original/afaddcb9d7dfaaf5bff7ef04101935814665ac16/design-an-attractive-background-for-your-website.png);
+     
+}
+
+.vertical{
+    transform: rotate(-90deg);
+    writing-mode:horizontal-tb;
+}
+
+.rangeSlider {
+    width: 50%;
+    height: 60px;
+    /*border-radius: 20px;
+    
+    
+    box-shadow: 0px 0px 5px #c1c1c1;*/
+
+    margin: 0px auto;
+    padding-top: 22px;
+}
+.circleRange{
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    outline: none;
+    height: 0px;
+    
+}
+
+.circleRange1{
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #fdc252;
+    outline: none;
+    height: 3px;
+    
+    border-radius: 10px;
+
+    margin-bottom: -13px;
+
+    -webkit-box-shadow: 0px 0px 18px 8px rgba(0,0,0,0.1); 
+    box-shadow: 0px 0px 18px 8px rgba(0,0,0,0.1);
+}
+
+.circleRange::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #101626;
+    cursor: pointer;
+    width: 15px;
+    height: 32px;
+    border-radius: 10%;
+    -webkit-box-shadow: 0px 0px 0px 1px #000000; 
+    box-shadow: 0px 0px 0px 1px #000000;
+
+    border-left:2px solid slategray;
+    border-right: 2px solid slategray;
+    border-radius: 3px;
+
+    
+
+
+    
+}
+.circleRange::-moz-slider-thumb{
+    -moz-appearance: none;
+    background: #101626;
+    cursor: pointer;
+    width: 15px;
+    height: 32px;
+    border-radius: 10%;
+  
+    -webkit-box-shadow: 0px 0px 0px 1px #000000; 
+    box-shadow: 0px 0px 0px 1px #000000;
+
+    /*outline-style: solid;
+    outline-width: 2px;
+    outline-color: slategrey;*/
+    border-left:2px solid slategray;
+    border-right: 2px solid slategray;
+    border-radius: 3px;
+    
+}
+
+.overlay:hover {
+    filter: opacity(100%) !important;
+}
+
+.pointer {cursor: pointer;}
+
+
+
+
