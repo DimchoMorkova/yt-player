@@ -226,7 +226,7 @@
     gapi.load("client", loadClient);
     
     function loadClient() {
-        gapi.client.setApiKey("AIzaSyCH_Jdbg2RHXDnirOWKVlvta0iitVli4cU");
+        gapi.client.setApiKey("APIKEY");
         return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
             .then(function() { console.log("GAPI client loaded for API"); },
                     function(err) { console.error("Error loading GAPI client for API", err); });
@@ -317,19 +317,7 @@
                         </div>
                         `;
                 });
-
-
-               //<a data-fancybox href="https://www.youtube.com/watch?v=${videoId}">
-                
-                /*
-                if (response.result.prevPageToken) {
-                    output += `<br><a class="paginate" href="#" data-id="${response.result.prevPageToken}" onclick="paginate(event, this)">Prev</a>`;
-                }
-      
-                if (response.result.nextPageToken) {
-                    output += `<a href="#" class="paginate" data-id="${response.result.nextPageToken}" onclick="paginate(event, this)">Next</a>`;
-                }
-                */
+         
                 
                 output += "</div>"
                 // Output list
@@ -404,13 +392,7 @@
 
 
 
-   // function playThumbnailRight(button) {
-   //     player2.cueVideoById(button.id)
-   // }
-
-    
-   // addEventListenerList(btnPlayL, 'click', playThumbnailLeft(btnPlayL)); 
-    //addEventListenerList(btnPlayR, 'click', playThumbnailRight(btnPlayR)); 
+  
     function PlayLeft(element) { 
         var parent = element.parentNode;
         
@@ -482,35 +464,6 @@
             updateTitle(player2, titleRight);
         }     
     });
-
-
-    
-    
-
-
-
-
-    /*     
-    var duration = player1.getDuration();
-
-    durationTime.innerHTML = duration;
-
-    while (true) {
-        currentTime.innerHTML = player1.getCurrentTime();
-    }
-    */
-
-        
-
-
-
-
-
-
-
-
-
-
 
 
     
